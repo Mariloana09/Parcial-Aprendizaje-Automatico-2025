@@ -1,0 +1,1 @@
+# Parcial-Aprendizaje-Automatico-2025
