@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>Proyecto Final – Aprendizaje Automático (2025)</b><br>
-  Autora: <b>Mariana Anahí López</b>  
+  Estudiante: <b>Mariana Anahí López</b>  
 </p>
 
 <p align="center">
@@ -23,14 +23,24 @@
 > **Archivo original:** `10_fiestaspopulares_festivales-datos_abiertos.csv`
 
 
+<table>
+<tr>
+<td>
 
-# Descripcion del proyecto
+### Descripción del Proyecto
 
-El presente trabajo se desarrolla con el objetivo de analizar los festivales y fiestas populares realizadas en distintas provincias argentinas y construir un modelo predictivo que permita estimar la cantidad aproximada de asistentes a cada evento.
+Este proyecto aplica técnicas de **aprendizaje automático supervisado** para estimar la cantidad de asistentes a festivales y fiestas populares en distintas provincias argentinas.  
+A partir de datos del **Portal de Datos Abiertos del Ministerio de Cultura**, se desarrollan modelos predictivos basados en variables culturales, geográficas y de gestión, con el fin de identificar los factores que más influyen en la convocatoria de cada evento.  
 
-El estudio parte de un dataset público con información oficial y busca, además de aplicar técnicas de limpieza y transformación de datos, explorar relaciones entre variables sociales, culturales y geográficas que influyen en la convocatoria de estos eventos.
+El estudio parte de información pública oficial y busca aportar una herramienta de valor para la **planificación cultural y turística** a nivel provincial y nacional.
 
-La elección de este dominio se basa en su relevancia económica y cultural: los festivales impactan de manera directa en el turismo, la ocupación hotelera, el comercio local y la difusión de las identidades regionales. Por ello, analizar sus patrones de asistencia puede aportar una herramienta valiosa para la planificación y la toma de decisiones tanto a nivel público como privado.
+</td>
+<td>
+  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/mapa%20argentina.jpg?raw=true" width="250"/>
+</td>
+</tr>
+</table>
+
 
  # Descripción del dataset
 
