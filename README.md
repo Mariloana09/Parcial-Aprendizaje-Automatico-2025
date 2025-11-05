@@ -41,20 +41,31 @@ El estudio parte de información pública oficial y busca aportar una herramient
 </tr>
 </table>
 
+### Fuente de datos y descripción del conjunto de datos
 
- # Descripción del dataset
+El dataset utilizado proviene del [Portal de Datos Abiertos del Ministerio de Cultura de la Nación](https://datos.cultura.gob.ar/), dentro del conjunto denominado **“Catálogo Nacional de Fiestas y Festivales”**.  
+Fue descargado en 2024 y contiene información detallada sobre festivales y fiestas populares realizados en todas las provincias argentinas.
 
-El dataset original contiene información sobre 3255 festivales y fiestas populares registradas en todo el territorio argentino. 
-Cada fila representa un evento, con variables relacionadas a su localización, características temáticas, tipo de gestión, duración, fecha de realización y cantidad aproximada de asistentes.
+El archivo original (`10_fiestaspopulares_festivales-datos_abiertos.csv`) incluye más de **3.255 registros** y **27 variables** que describen características geográficas, culturales y organizativas de cada evento.
 
-Cantidad de instancias: 3255
-Cantidad de variables originales: 27
+Entre las variables más relevantes se encuentran:
+- Nombre del festival  
+- Provincia  
+- Temática principal  
+- Tipo de gestión (pública o privada)  
+- Tipo de entrada (libre o paga)  
+- Mes de realización  
+- Duración del evento  
+- Último año registrado  
+- Cantidad de asistentes *(variable objetivo)*  
+
+A continuación se muestran fragmentos del dataset original:
+<p align="center">
+  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/datos%201.jpg?raw=true" width="400"/>
+  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/datos%202.jpg?raw=true" width="400"/>
 
 
-Variables originales
-id (o código interno del registro), provincia, cod_prov, departamento, cod_dep, localidad_paraje, nombre, tematica_principal, tematica_secundaria, tipo_de_gestion, tipo_de_gestion_privado, tipo_entrada, periodicidad, modalidad, duracion_(días), cantidad_aprox_de_asistentes, aniversario, año_primera_edicion, ediciones, ultimo_año_de_realizacion, semana_de_realizacion, mes_de_realizacion, nota, fuente, latitud, longitud, categoria. 
-
-Si bien todas aportaban información contextual, no todas eran útiles para el objetivo analítico del proyecto —estimar o modelar la cantidad aproximada de asistentes a cada evento. Para seleccionar las variables a analizar se aplicaron varios criterios: 
+Si bien todas las variables aportaban información contextual, no todas eran útiles para el objetivo analítico del proyecto —estimar o modelar la cantidad aproximada de asistentes a cada evento. Para seleccionar las variables a analizar se aplicaron varios criterios: 
 • Relevancia predictiva: se conservaron variables que pudieran tener relación directa con la asistencia (por ejemplo, provincia o tipo de entrada).
 • Completitud: se eliminaron columnas con más del 50% de valores nulos.
 • Redundancia: se descartaron aquellas que duplicaban información o tenían variabilidad irrelevante.
@@ -63,6 +74,8 @@ Ejemplos eliminados: cod_prov, cod_dep, latitud, longitud, nota, fuente, tematic
 
 Estas variables se eliminaron en una primera etapa, ya que no aportaban valor predictivo y dificultaban el tratamiento posterior de los datos
 
+> *Fuente: Portal de Datos Abiertos del Ministerio de Cultura (Argentina).* 
+</p>
 # Imputación de valores faltantes
 Luego se decidio hacer una imputacion con los valores nulos para que el analisis del data set sea significativo, asi que se tomaron ciertas variables para trabajar:
 
