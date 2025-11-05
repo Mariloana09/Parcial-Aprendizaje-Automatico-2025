@@ -61,8 +61,8 @@ Entre las variables más relevantes se encuentran:
 
 A continuación se muestran fragmentos del dataset original:
 <p align="center">
-  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/datos%201.jpg?raw=true" width="600"/>
-  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/datos%202.jpg?raw=true" width="700"/>
+  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/datos%201.jpg?raw=true" width="800"/>
+  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/datos%202.jpg?raw=true" width="800"/>
 
 
 Si bien todas las variables aportaban información contextual, no todas eran útiles para el objetivo analítico del proyecto —estimar o modelar la cantidad aproximada de asistentes a cada evento. Para seleccionar las variables a analizar se aplicaron varios criterios: 
