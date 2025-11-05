@@ -70,8 +70,11 @@ Si bien todas las variables aportaban información contextual, no todas eran út
 Para seleccionar las variables a analizar se aplicaron varios criterios: 
 </p> 
 • Relevancia predictiva: se conservaron variables que pudieran tener relación directa con la asistencia (por ejemplo, provincia o tipo de entrada).
+
 • Completitud: se eliminaron columnas con más del 50% de valores nulos.
+
 • Redundancia: se descartaron aquellas que duplicaban información o tenían variabilidad irrelevante.
+
 
 Ejemplos eliminados: cod_prov, cod_dep, latitud, longitud, nota, fuente, tematica_secundaria, tipo_de_gestion_privado, modalidad, aniversario, semana_de_realizacion.
 
