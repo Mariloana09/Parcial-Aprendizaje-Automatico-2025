@@ -1,8 +1,28 @@
-# Parcial-Aprendizaje-Automatico-2025
+<p align="center">
+  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/Entrega%201.png?raw=true" alt="Banner del Proyecto" width="800"/>
+</p>
 
-*Tema:* Análisis y modelado de datos de fiestas populares y festivales en Argentina
-*Fuente de datos:* Portal de Datos Abiertos del Ministerio de Cultura de la Nación
-*Archivo original:* 10_fiestaspopulares_festivales-datos_abiertos.csv
+<h1 align="center"> Predicción de Asistencia a Festivales y Fiestas Populares en Argentina 🇦🇷</h1>
+
+<p align="center">
+  <b>Proyecto Final – Aprendizaje Automático (2025)</b><br>
+  Autora: <b>Mariana Anahí López</b>  
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-blue?logo=python" alt="Python Badge"/>
+  <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter" alt="Jupyter Badge"/>
+  <img src="https://img.shields.io/badge/Scikit--Learn-1.4.0-yellow?logo=scikit-learn" alt="Scikit-learn Badge"/>
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT Badge"/>
+</p>
+
+---
+
+> **Tema:** Análisis y modelado de datos de festivales y fiestas populares en Argentina  
+> **Fuente de datos:** Portal de Datos Abiertos del Ministerio de Cultura de la Nación  
+> **Archivo original:** `10_fiestaspopulares_festivales-datos_abiertos.csv`
+
+
 
 # Descripcion del proyecto
 
