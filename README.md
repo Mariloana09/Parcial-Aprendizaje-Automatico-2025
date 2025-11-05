@@ -68,7 +68,7 @@ A continuación se muestran fragmentos del dataset original:
 Si bien todas las variables aportaban información contextual, no todas eran útiles para el objetivo analítico del proyecto —estimar o modelar la cantidad aproximada de asistentes a cada evento. 
 
 Para seleccionar las variables a analizar se aplicaron varios criterios: 
-<p 
+</p> 
 • Relevancia predictiva: se conservaron variables que pudieran tener relación directa con la asistencia (por ejemplo, provincia o tipo de entrada).
 • Completitud: se eliminaron columnas con más del 50% de valores nulos.
 • Redundancia: se descartaron aquellas que duplicaban información o tenían variabilidad irrelevante.
