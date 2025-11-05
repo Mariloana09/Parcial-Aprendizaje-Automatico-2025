@@ -36,7 +36,7 @@ El estudio parte de información pública oficial y busca aportar una herramient
 
 </td>
 <td>
-  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/mapa%20argentina.jpg?raw=true" width="250"/>
+  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/mapa%20argentina.jpg?raw=true" width="400"/>
 </td>
 </tr>
 </table>
