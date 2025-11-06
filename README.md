@@ -172,7 +172,7 @@ Tercero : DATA SET CODIFICADO. festivales_codificado_modelo.csv — Versión num
 
 Con este proceso se logró construir una base de datos coherente, estructurada y preparada para modelado predictivo, conservando el mayor volumen de información posible.
 
-### Resultados obtenidos
+# Resultados obtenidos
 
 Tras el entrenamiento de los modelos de regresión, se compararon los desempeños de **Regresión Lineal** y **Random Forest Regressor** utilizando tres métricas principales:  
 **MAE (Error Medio Absoluto)**, **RMSE (Raíz del Error Cuadrático Medio)** y **R² (Coeficiente de Determinación)**.
