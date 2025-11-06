@@ -172,7 +172,33 @@ Tercero : DATA SET CODIFICADO. festivales_codificado_modelo.csv — Versión num
 
 Con este proceso se logró construir una base de datos coherente, estructurada y preparada para modelado predictivo, conservando el mayor volumen de información posible.
 
-El objetivo final será identificar los factores que más influyen en la cantidad de asistentes a los festivales y construir un modelo que pueda estimar, de forma aproximada, la convocatoria esperada para eventos futuros.
+### Resultados obtenidos
+
+Tras el entrenamiento de los modelos de regresión, se compararon los desempeños de **Regresión Lineal** y **Random Forest Regressor** utilizando tres métricas principales:  
+**MAE (Error Medio Absoluto)**, **RMSE (Raíz del Error Cuadrático Medio)** y **R² (Coeficiente de Determinación)**.
+
+| Modelo                 | MAE        | RMSE         | R²       |
+|:-----------------------|:-----------|:-------------|:---------|
+| LinearRegression       | 7934.73    | 34470.32     | 0.2478   |
+| RandomForestRegressor  | **7195.32**| **34418.89** | **0.2500** |
+
+**Lectura inicial:**  
+- Ambos modelos presentan un desempeño **similar** en términos de error cuadrático medio (RMSE).  
+- El modelo **Random Forest** muestra una **ligera mejora** en el error absoluto (MAE) y en el coeficiente de determinación (R²).  
+- Los valores de R² indican que todavía queda **variabilidad sin explicar**, lo que sugiere que podrían incorporarse variables adicionales (por ejemplo, información turística, clima o campañas de difusión).
+
+---
+
+#### Matriz tipo confusión por intervalos
+
+Para visualizar en qué rangos de asistencia el modelo acierta o se confunde, se agruparon los valores reales y predichos en los siguientes intervalos:  
+`0–1k`, `1k–5k`, `5k–10k`, `10k–50k`, `50k+`.
+
+La siguiente figura muestra el porcentaje de aciertos por rango (diagonal) y los desvíos hacia otros intervalos:
+
+
+> *La matriz permite observar un mejor desempeño en los rangos intermedios (5k–50k asistentes) y mayores desvíos en los extremos (0–1k y 50k+), donde el modelo tiende a subestimar o sobreestimar la asistencia.*
+
 
 
 
