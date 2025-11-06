@@ -215,6 +215,27 @@ En general, los resultados muestran que:
 
 Estos resultados iniciales indican que el modelo logra captar **tendencias generales** en la asistencia, aunque todavía existe **variabilidad no explicada** que podría mejorarse incorporando variables contextuales adicionales, como condiciones climáticas, feriados, nivel de promoción o capacidad turística de cada región.
 
+# Probador por consola — Predicción de un nuevo evento
+
+Como complemento del análisis, se desarrolló un **probador por consola** que permite ingresar los datos de un nuevo festival y obtener una **predicción estimada de asistentes** en tiempo real utilizando el modelo entrenado.
+
+El script carga automáticamente el mejor modelo guardado (`best_model.pkl` o `best_model_log.pkl`) y reconstruye la estructura de variables utilizadas durante el entrenamiento.
+
+**Variables solicitadas:**
+- Provincia  
+- Temática principal  
+- Tipo de gestión  
+- Tipo de entrada  
+- Mes de realización  
+- Duración (en días)
+
+Una vez completados los datos, el programa devuelve la predicción aproximada de asistentes al evento.
+
+> *Esta herramienta está incluida al final de la notebook `Entrega_3.ipynb` en la sección “Predicción interactiva”.*  
+> También puede ejecutarse como script independiente desde consola (`probador.py`).
+
+
+
 # Estructura del repositorio
 
 El proyecto se organiza siguiendo la estructura base del modelo **Cookiecutter Data Science**, lo que facilita la trazabilidad del flujo de trabajo —desde la obtención y procesamiento de datos hasta la generación de modelos y resultados.
