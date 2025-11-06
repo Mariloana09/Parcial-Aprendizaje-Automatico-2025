@@ -200,8 +200,7 @@ La siguiente figura muestra el porcentaje de aciertos por rango (diagonal) y los
 </p>
 
 
-
-> *La matriz permite observar un mejor desempeño en los rangos intermedios (5k–50k asistentes) y mayores desvíos en los extremos (0–1k y 50k+), donde el modelo tiende a subestimar o sobreestimar la asistencia.*
+> *La matriz elaborada a partir de las predicciones del modelo Random Forest Regressor, permite observar un mejor desempeño en los rangos intermedios (5k–50k asistentes) y mayores desvíos en los extremos (0–1k y 50k+), donde el modelo tiende a subestimar o sobreestimar la asistencia.*
 
 
 
