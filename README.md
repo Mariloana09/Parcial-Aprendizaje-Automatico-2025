@@ -66,7 +66,7 @@ A continuación se muestran fragmentos del dataset original:
 
 ###  Procesamiento, limpieza e imputación de datos
 
-### 🧮 Selección de variables e imputación de valores faltantes
+###  Selección de variables e imputación de valores faltantes
 
 Si bien todas las variables aportaban información contextual, no todas eran útiles para el objetivo analítico del proyecto —**estimar la cantidad aproximada de asistentes** a cada evento.  
 
@@ -84,7 +84,7 @@ Estas variables se eliminaron en una primera etapa, ya que no aportaban valor pr
 
 ---
 
-### ⚙️ Imputación de valores faltantes
+### Imputación de valores faltantes
 
 Luego se decidió realizar una **imputación de valores nulos** para conservar la mayor cantidad posible de registros sin perder información valiosa.  
 El proceso se centró en las variables:
@@ -97,7 +97,7 @@ Se aplicó una **imputación basada en agrupamientos**, completando los valores 
 
 ---
 
-#### 📏 Imputación de `duracion_dias`
+#### Imputación de `duracion_dias`
 - **Variables de referencia utilizadas:** `provincia`, `departamento`, `tematica_principal`.  
 - **Lógica aplicada:**  
   Se calculó la duración promedio de los festivales que compartían la misma provincia y temática principal, dentro del mismo departamento cuando estaba disponible.  
@@ -107,7 +107,7 @@ Se aplicó una **imputación basada en agrupamientos**, completando los valores 
 
 ---
 
-#### 👥 Imputación de `cantidad_aprox_de_asistentes`
+#### Imputación de `cantidad_aprox_de_asistentes`
 - **Variables de referencia utilizadas:** `provincia`, `departamento`, `tematica_principal`.  
 - **Lógica aplicada:**  
   Se completaron los valores faltantes con el promedio de asistentes correspondiente a festivales de la misma provincia y temática principal.  
@@ -117,7 +117,7 @@ Se aplicó una **imputación basada en agrupamientos**, completando los valores 
 
 ---
 
-#### 📅 Imputación de `mes_de_realizacion`
+#### Imputación de `mes_de_realizacion`
 - **Variables de referencia utilizadas:** `provincia`, `nombre` (cuando el evento se repite anualmente).  
 - **Lógica aplicada:**  
   En casos donde el mismo evento se encontraba registrado en otros años o provincias, se recuperó el mes de realización observando coincidencias de nombre.  
