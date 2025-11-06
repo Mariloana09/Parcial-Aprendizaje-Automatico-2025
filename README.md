@@ -64,60 +64,75 @@ A continuación se muestran fragmentos del dataset original:
   <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/datos%201.jpg?raw=true" width="800"/>
   <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/datos%202.jpg?raw=true" width="800"/>
 
+###  Procesamiento, limpieza e imputación de datos
 
-Si bien todas las variables aportaban información contextual, no todas eran útiles para el objetivo analítico del proyecto —estimar o modelar la cantidad aproximada de asistentes a cada evento. 
+### 🧮 Selección de variables e imputación de valores faltantes
 
-Para seleccionar las variables a analizar se aplicaron varios criterios: 
-</p> 
-• Relevancia predictiva: se conservaron variables que pudieran tener relación directa con la asistencia (por ejemplo, provincia o tipo de entrada).
+Si bien todas las variables aportaban información contextual, no todas eran útiles para el objetivo analítico del proyecto —**estimar la cantidad aproximada de asistentes** a cada evento.  
 
-• Completitud: se eliminaron columnas con más del 50% de valores nulos.
+Para seleccionar las variables a analizar se aplicaron varios criterios:
 
-• Redundancia: se descartaron aquellas que duplicaban información o tenían variabilidad irrelevante.
+- **Relevancia predictiva:** se conservaron variables con relación directa con la asistencia (por ejemplo, provincia o tipo de entrada).  
+- **Completitud:** se eliminaron columnas con más del 50 % de valores nulos.  
+- **Redundancia:** se descartaron aquellas que duplicaban información o tenían variabilidad irrelevante.
+
+**Ejemplos eliminados:** `cod_prov`, `cod_dep`, `latitud`, `longitud`, `nota`, `fuente`, `tematica_secundaria`, `tipo_de_gestion_privado`, `modalidad`, `aniversario`, `semana_de_realizacion`.  
+
+Estas variables se eliminaron en una primera etapa, ya que no aportaban valor predictivo y dificultaban el tratamiento posterior de los datos.
+
+> *Fuente: Portal de Datos Abiertos del Ministerio de Cultura (Argentina).*
+
+---
+
+### ⚙️ Imputación de valores faltantes
+
+Luego se decidió realizar una **imputación de valores nulos** para conservar la mayor cantidad posible de registros sin perder información valiosa.  
+El proceso se centró en las variables:
+
+- `duracion_dias`  
+- `cantidad_aprox_de_asistentes`  
+- `mes_de_realizacion`  
+
+Se aplicó una **imputación basada en agrupamientos**, completando los valores faltantes mediante el cálculo de **media o moda** dentro de grupos con características similares.
+
+---
+
+#### 📏 Imputación de `duracion_dias`
+- **Variables de referencia utilizadas:** `provincia`, `departamento`, `tematica_principal`.  
+- **Lógica aplicada:**  
+  Se calculó la duración promedio de los festivales que compartían la misma provincia y temática principal, dentro del mismo departamento cuando estaba disponible.  
+  Si no existían coincidencias exactas, se utilizó el promedio general por provincia.  
+- **Motivo:**  
+  La duración de un evento suele estar asociada al tipo de celebración (por ejemplo, las fiestas religiosas duran varios días, mientras que las ferias gastronómicas suelen ser de uno o dos).
+
+---
+
+#### 👥 Imputación de `cantidad_aprox_de_asistentes`
+- **Variables de referencia utilizadas:** `provincia`, `departamento`, `tematica_principal`.  
+- **Lógica aplicada:**  
+  Se completaron los valores faltantes con el promedio de asistentes correspondiente a festivales de la misma provincia y temática principal.  
+  Este enfoque permitió respetar las diferencias regionales (por ejemplo, mayor asistencia en Buenos Aires que en Tierra del Fuego) y por tipo de evento.  
+- **Motivo:**  
+  La cantidad de público depende en gran medida del contexto geográfico y del tipo de actividad principal.
+
+---
+
+#### 📅 Imputación de `mes_de_realizacion`
+- **Variables de referencia utilizadas:** `provincia`, `nombre` (cuando el evento se repite anualmente).  
+- **Lógica aplicada:**  
+  En casos donde el mismo evento se encontraba registrado en otros años o provincias, se recuperó el mes de realización observando coincidencias de nombre.  
+  Cuando no fue posible, se aplicó la **moda provincial** (mes más frecuente para festivales en esa provincia).  
+- **Motivo:**  
+  Los festivales suelen realizarse en fechas fijas o recurrentes cada año, por lo que la provincia y el nombre del evento son buenos predictores.
+
+---
 
 
-Ejemplos eliminados: cod_prov, cod_dep, latitud, longitud, nota, fuente, tematica_secundaria, tipo_de_gestion_privado, modalidad, aniversario, semana_de_realizacion.
+> *Flujo general de procesamiento: Dataset original → Dataset imputado → Dataset codificado.*
 
-Estas variables se eliminaron en una primera etapa, ya que no aportaban valor predictivo y dificultaban el tratamiento posterior de los datos
 
-> *Fuente: Portal de Datos Abiertos del Ministerio de Cultura (Argentina).* 
-</p>
-# Imputación de valores faltantes
-Luego se decidio hacer una imputacion con los valores nulos para que el analisis del data set sea significativo, asi que se tomaron ciertas variables para trabajar:
 
-•	duracion_dias
-•	cantidad_aprox_de_asistentes
-•	mes_de_realizacion
 
-Para no eliminar esos registros (dado que implicaria perder información valiosa), se aplicó una imputación basada en agrupamientos:
-es decir, los valores faltantes se completaron calculando la media o la moda dentro de grupos con características similares.
-
-*Imputación de duracion_dias*
-•	Variables de referencia utilizadas:
-provincia, departamento, tematica_principal
-•	Lógica aplicada:
-Se calculó la duración promedio de festivales que compartían la misma provincia y temática principal, dentro del mismo departamento cuando estaba disponible.
-Si no existían coincidencias exactas, se utilizó el promedio general por provincia.
-•	Motivo:
-La duración de un evento tiende a estar asociada con el tipo de celebración (por ejemplo, fiestas religiosas suelen durar varios días, mientras que ferias gastronómicas pueden ser de uno o dos).
-
-*Imputación de cantidad_aprox_de_asistentes*
-•	Variables de referencia utilizadas:
-provincia, departamento, tematica_principal
-•	Lógica aplicada:
-Se completaron los valores faltantes con el promedio de asistentes correspondiente a festivales de la misma provincia y temática principal.
-Este enfoque permitió respetar diferencias regionales (por ejemplo, mayor asistencia en Buenos Aires que en Tierra del Fuego) y por tipo de evento.
-•	Motivo:
-La cantidad de público depende en gran medida del contexto geográfico y del tipo de actividad principal.
-
-*Imputación de mes_de_realizacion*
-•	Variables de referencia utilizadas:
-provincia, nombre (cuando el evento se repite anualmente)
-•	Lógica aplicada:
-En casos donde el mismo evento se encontraba registrado en otros años o provincias, se recuperó el mes de realización observando coincidencias de nombre.
-Cuando no fue posible, se aplicó la moda provincial (mes más frecuente para festivales en esa provincia).
-•	Motivo:
-Los festivales suelen realizarse en fechas fijas o recurrentes cada año, por lo que la provincia y el nombre del evento son buenos predictores.
 
 # Variables finales seleccionadas para análisis y modelado
 Finalmente las variables seleccionadas para el analisis y modelado fueron las siguientes:
