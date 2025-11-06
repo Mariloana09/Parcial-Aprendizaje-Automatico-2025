@@ -195,6 +195,11 @@ Para visualizar en qué rangos de asistencia el modelo acierta o se confunde, se
 `0–1k`, `1k–5k`, `5k–10k`, `10k–50k`, `50k+`.
 
 La siguiente figura muestra el porcentaje de aciertos por rango (diagonal) y los desvíos hacia otros intervalos:
+<p align="center">
+  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/matriz_intervalos.png?raw=true" width="650"/>
+</p>
+
+
 
 
 > *La matriz permite observar un mejor desempeño en los rangos intermedios (5k–50k asistentes) y mayores desvíos en los extremos (0–1k y 50k+), donde el modelo tiende a subestimar o sobreestimar la asistencia.*
