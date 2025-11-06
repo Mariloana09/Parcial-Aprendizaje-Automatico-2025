@@ -219,7 +219,7 @@ Estos resultados iniciales indican que el modelo logra captar **tendencias gener
 
 El proyecto se organiza siguiendo la estructura base del modelo **Cookiecutter Data Science**, lo que facilita la trazabilidad del flujo de trabajo —desde la obtención y procesamiento de datos hasta la generación de modelos y resultados.
 
-Parcial-Aprendizaje-Automático-2025/
+(``` Parcial-Aprendizaje-Automático-2025/
 │
 ├── datos/ # Datasets originales, imputados y codificados
 │ ├── 10_fiestaspopulares_festivales-datos_abiertos.csv
@@ -250,6 +250,7 @@ Parcial-Aprendizaje-Automático-2025/
 ├── requisitos.txt # Librerías necesarias para reproducir el entorno
 └── LICENSE # Licencia MIT
 
+```)
 
 > Esta estructura permite mantener la coherencia del flujo de trabajo y facilita la ejecución reproducible del proyecto en cualquier entorno.
 
