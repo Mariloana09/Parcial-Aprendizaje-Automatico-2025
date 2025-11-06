@@ -245,7 +245,7 @@ Una vez completados los datos, el programa devuelve la predicción aproximada de
 </p>
 
 <p align="center">
-  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/probador%203.jpg?raw=true" width="200"/>
+  <img src="https://github.com/Mariloana09/Parcial-Aprendizaje-Automatico-2025/blob/main/imagenes/probador%203.jpg?raw=true" width="250"/>
 </p>
 
 > *El probador permite seleccionar las características del evento desde un menú interactivo y muestra la predicción estimada de asistentes generada por el modelo Random Forest Regressor.*
