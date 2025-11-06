@@ -215,6 +215,48 @@ En general, los resultados muestran que:
 
 Estos resultados iniciales indican que el modelo logra captar **tendencias generales** en la asistencia, aunque todavía existe **variabilidad no explicada** que podría mejorarse incorporando variables contextuales adicionales, como condiciones climáticas, feriados, nivel de promoción o capacidad turística de cada región.
 
+# Estructura del repositorio
+
+El proyecto se organiza siguiendo la estructura base del modelo **Cookiecutter Data Science**, lo que facilita la trazabilidad del flujo de trabajo —desde la obtención y procesamiento de datos hasta la generación de modelos y resultados.
+
+Parcial-Aprendizaje-Automático-2025/
+│
+├── datos/ # Datasets originales, imputados y codificados
+│ ├── 10_fiestaspopulares_festivales-datos_abiertos.csv
+│ ├── festivales_imputado.csv
+│ └── festivales_codificado_modelo.csv
+│
+├── cuadernos/ # Notebooks de análisis y modelado
+│ ├── Entrega_2.ipynb
+│ └── Entrega_3.ipynb
+│
+├── informes/ # Informes y gráficos exportados (PDF, imágenes)
+│
+├── imagenes/ # Recursos visuales usados en el README y notebook
+│ ├── Entrega 1.png
+│ ├── mapa argentina.jpg
+│ ├── datos 1.jpg
+│ ├── datos 2.jpg
+│ ├── proceso_datos.png
+│ ├── Matriz.jpg
+│ └── otros recursos gráficos
+│
+├── models/ # Modelos entrenados y columnas utilizadas
+│ ├── best_model.pkl
+│ ├── best_model_log.pkl
+│ └── feature_names.pkl
+│
+├── README.md # Documento principal del proyecto
+├── requisitos.txt # Librerías necesarias para reproducir el entorno
+└── LICENSE # Licencia MIT
+
+
+> Esta estructura permite mantener la coherencia del flujo de trabajo y facilita la ejecución reproducible del proyecto en cualquier entorno.
+
+---
+
+
+
 
 
 
