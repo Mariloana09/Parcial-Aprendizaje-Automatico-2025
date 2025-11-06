@@ -203,6 +203,21 @@ La siguiente figura muestra el porcentaje de aciertos por rango (diagonal) y los
 > *La matriz elaborada a partir de las predicciones del modelo Random Forest Regressor, permite observar un mejor desempeño en los rangos intermedios (5k–50k asistentes) y mayores desvíos en los extremos (0–1k y 50k+), donde el modelo tiende a subestimar o sobreestimar la asistencia.*
 
 
+# Conclusiones preliminares
+
+El análisis comparativo entre los modelos de **Regresión Lineal** y **Random Forest Regressor** permitió observar comportamientos similares en cuanto al error cuadrático medio (RMSE), aunque el Random Forest logró una leve mejora en el **error absoluto (MAE)** y en el **coeficiente de determinación (R²)**.  
+
+En general, los resultados muestran que:
+
+- Los **rangos intermedios de asistencia (5k–50k)** fueron los que el modelo predijo con mayor precisión.  
+- En los **extremos (0–1k y 50k+)** se evidenciaron mayores desvíos, lo que sugiere que el modelo tiende a **subestimar o sobreestimar** los valores más alejados de la media.  
+- Las variables que demostraron mayor influencia fueron: **provincia**, **temática principal**, **tipo de gestión** y **tipo de entrada**.  
+
+Estos resultados iniciales indican que el modelo logra captar **tendencias generales** en la asistencia, aunque todavía existe **variabilidad no explicada** que podría mejorarse incorporando variables contextuales adicionales, como condiciones climáticas, feriados, nivel de promoción o capacidad turística de cada región.
+
+
+
+
 
 
 
