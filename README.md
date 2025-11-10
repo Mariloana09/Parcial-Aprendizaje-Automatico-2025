@@ -292,18 +292,19 @@ Parcial-Aprendizaje-Automático-2025/
 > Esta estructura permite mantener la coherencia del flujo de trabajo y facilita la ejecución reproducible del proyecto en cualquier entorno.
 
 ---
-# Video de presentación
+## Video de presentación
 
 El siguiente video resume el proceso completo del proyecto:  
 desde la exploración inicial y la limpieza de datos, hasta la construcción del modelo predictivo y la prueba interactiva del sistema de predicción de asistentes.
 
 <p align="center">
-  <a href="TU_ENLACE_DE_GOOGLE_DRIVE" target="_blank">
-    <img src="[(https://drive.google.com/drive/folders/1Uhl0NZS-lpWhyfR9goHO6CNWYL-kaoCL?usp=drive_link)-azul?style=for-the-badge&logo=youtube&logoColor=white]" alt="Video de presentación"/>
+  <a href="https://drive.google.com/drive/folders/1Uhl0NZS-lpWhyfR9goHO6CNWYL-kaoCL?usp=drive_link" target="_blank">
+    <img src="https://img.shields.io/badge/Ver%20Video%20de%20Presentaci%C3%B3n%20-en%20Google%20Drive-blue?style=for-the-badge&logo=youtube&logoColor=white" alt="Video de presentación"/>
   </a>
 </p>
 
-> *Duración aproximada: 7 minutos — Presentación del proceso, análisis y resultados del modelo predictivo.*
+> ⏱️ *Duración aproximada: 7 minutos — Presentación del proceso, análisis y resultados del modelo predictivo.*
+
 
 
 
