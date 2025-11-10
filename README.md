@@ -299,7 +299,7 @@ desde la exploración inicial y la limpieza de datos, hasta la construcción del
 
 <p align="center">
   <a href="TU_ENLACE_DE_GOOGLE_DRIVE" target="_blank">
-    <img src="https://img.shields.io/badge/Ver%20video%20de%20presentaci%C3%B3n-azul?style=for-the-badge&logo=youtube&logoColor=white" alt="Video de presentación"/>
+    <img src="[(https://drive.google.com/drive/folders/1Uhl0NZS-lpWhyfR9goHO6CNWYL-kaoCL?usp=drive_link)-azul?style=for-the-badge&logo=youtube&logoColor=white]" alt="Video de presentación"/>
   </a>
 </p>
 
