@@ -186,7 +186,7 @@ Tras el entrenamiento de los modelos de regresión, se compararon los desempeño
 - Ambos modelos presentan un desempeño **similar** en términos de error cuadrático medio (RMSE).  
 - El modelo **Random Forest** muestra una **ligera mejora** en el error absoluto (MAE) y en el coeficiente de determinación (R²).  
 - Los valores de R² indican que todavía queda **variabilidad sin explicar**, lo que sugiere que podrían incorporarse variables adicionales (por ejemplo, información turística, clima o campañas de difusión).
-
+“Los archivos .pkl se descargan desde la Release v1.0-modelos”.
 ---
 
 #### Matriz tipo confusión por intervalos
