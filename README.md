@@ -279,13 +279,24 @@ Parcial-Aprendizaje-Automático-2025/
 │ ├── Matriz.jpg
 │ └── otros recursos gráficos
 │
-├── models/ # Modelos entrenados y columnas utilizadas
-│ ├── best_model.pkl
-│ ├── best_model_log.pkl
-│ └── feature_names.pkl
+├── models/ # Modelos, métricas y gráficos
+│ ├── best_model.joblib
+│ ├── best_model_log.joblib
+│ ├── metrics.csv
+│ ├── metrics_log.csv
+│ └── figs/
+│ ├── pred_vs_real_LinearRegression.png
+│ ├── pred_vs_real_RandomForestRegressor.png
+│ ├── residuos_LinearRegression_log_residual_hist.png
+│ └── ...
 │
-├── README.md # Documento principal del proyecto
-├── requisitos.txt # Librerías necesarias para reproducir el entorno
+├── reports/ # Documentos de presentación y análisis
+│ └── informacion_de_la_notebook.docx
+│
+├── imagenes/ # Imágenes usadas en README o video
+│
+├── requirements.txt # Librerías necesarias
+└── README.md # Este archivo
 └── LICENSE # Licencia MIT
 ```
 
